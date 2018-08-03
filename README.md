@@ -1,5 +1,10 @@
+
+# LH2 Transfer Simulation
+
 The code LH2TS (for “LH2 Transfer Simulation”) enables to calculate the wasted H2 due to transfer and boil-off while using LH2 as a fuel for transportation. More specifically, a reduced lumped-parameter model simulates thermodynamic states in 2 vessels (one feeding, one receiving) using mass and energy balances for each control volume (vapor and liquid, in each vessel) and relying on 2-phase behavior and heat transfer models specific to cryogenic fluids (self consistent theory of dynamical condensation/evaporation – see references for details).
 This code was developed and tested using MATLAB R2013b and REFPROP DLL version 9.1 for parahydrogen [1], on a laptop PC running on 64-bit Windows 10 Enterprise (2016), with an Intel Core -7-6600U CPU @ 2.60 GHz and a 16.0 GB RAM.
+
+# Description of the files
 
 The simulation code consists of 9 MATLAB files that should be located in the same folder:
 -	runNominal.m : runs the overall code
@@ -43,3 +48,9 @@ physics model of nominal and faulty operational modes of propellant loading (liq
 [4] M. Daigle, S. Lee, C. Muratov, S. Osipov, V. Smelyanskiy, and  Michael Foygel, “LH2 Matlab Simulation User Manual”, December 3 2010
 
 [5] M. Daigle, M. Foygel and V. Smelyanskiy, “Model-based diagnostics for propellant loading systems”,  2011 IEEE Aerospace Conference, 5-12 March 2011
+
+License
+
+LH2TS is released under a NASA open source agreement license, version 1.3. For more details see the [LICENSE] file
+
+LLNL-CODE-748554
