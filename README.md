@@ -36,7 +36,7 @@ The code has been verified only for “typical” thermodynamic states of H2 (i.
 
 Please not that package only works if a REFPROP subroutine compatible with MATLAB is installed on the computer. For linking REFPROP with MATLAB, make sure to follow instructions that can be found online, such as http://trc.nist.gov/refprop/LINKING/Linking.htm (last accessed 12/7/2017). If running into issues with .dll from MATLAB, make sure you install REFPROP in “Program Files (x86)” and that REFPRP64_thunk_pcwin64.dll is in that directory.
 
-References
+# References
 
 [1] Lemmon, E.W., Huber, M.L., McLinden, M.O.  NIST Standard Reference Database 23:  Reference Fluid Thermodynamic and Transport Properties-REFPROP, Version 9.1, National Institute of Standards and Technology, Standard Reference Data Program, Gaithersburg, 2013.
 
@@ -49,8 +49,8 @@ physics model of nominal and faulty operational modes of propellant loading (liq
 
 [5] M. Daigle, M. Foygel and V. Smelyanskiy, “Model-based diagnostics for propellant loading systems”,  2011 IEEE Aerospace Conference, 5-12 March 2011
 
-License
+# License
 
-LH2TS is released under a NASA open source agreement license, version 1.3. For more details see the [LICENSE] file
+LH2TS is released under a NASA open source agreement license, version 1.3. For more details see the [LICENSE](https://github.com/LLNL/LH2Transfer/blob/master/LICENSE.md) file
 
 LLNL-CODE-748554
