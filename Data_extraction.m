@@ -19,7 +19,7 @@ nominal.pcthL2 = nominal.hL2./LH2Model.H;
     
 for z=1:length(nominal.rhov1);
     
-        nominal.pv1(z,:)=vaporpressure_bis(nominal.uv1(z,end), nominal.rhov1(z));
+        nominal.pv1(z,:)=vaporpressure(nominal.uv1(z,end), nominal.rhov1(z));
         for ii = 1:LH2Model.nV1
             if nominal.uv1(z,ii)<0*(-108.8/(2.0159/1000))
                 nominal.uv1(z,ii)= 0;
@@ -34,7 +34,7 @@ for z=1:length(nominal.rhov1);
         nominal.hL1(z) = cylVToH(nominal.VL1(z),LH2Model.R1,LH2Model.Lcyl);
   
        
-        nominal.pv2(z,:)=vaporpressure_bis(nominal.uv2(z,end),nominal.rhov2(z));
+        nominal.pv2(z,:)=vaporpressure(nominal.uv2(z,end),nominal.rhov2(z));
         nominal.Jvalve222(z,:)=nominal.ETTTVenstate(z)*gasFlow(LH2Model.S_valve2,LH2Model.gamma_,nominal.rhov2(z),nominal.pv2(z),LH2Model.p_atm);
         for ii = 1:LH2Model.nV2
             if nominal.uv2(z,ii)<0*(-108.8/(2.0159/1000))
